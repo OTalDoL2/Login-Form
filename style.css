@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    --bg-color-one: rgb(50, 143, 197);
+    --bg-color-two: rgb(114, 50, 197);
+  }
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    margin: 0px;
+    background: linear-gradient(-45deg, var(--bg-color-one), var(--bg-color-two)) ;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size: 14px;
+}
+
+main.container{
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.box{
+    width: 320px;
+    height: 420px;
+    background-color: #fff;
+    border-radius: 2%;
+}
+
+.border-bt{
+    margin-top: -7px;
+    margin-left: 2px;
+    width: 25px;
+    height: 5px;
+    background-color: rgb(50, 126, 197);
+    border-radius: 20%;
+}
+
+.other-border{
+    margin-top: -10px;
+    margin-left: 2px;
+    width: 250px;
+    height: 2px;
+    background-color: rgb(175, 175, 175);
+    border-radius: 20%;
+}
+.line-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.username{
+    margin-top: 10px;
+    width: 240px;
+    height: 30px;
+    background-color: #fff;
+    margin-bottom: 12px;
+}
+.name{
+    color: rgb(175, 175, 175);
+}
+.button-box{
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+.title{
+    margin-top: 25px;
+    margin-left: 32px;
+    margin-bottom: 45px;
+}
+
+.continue-btn{
+    background: linear-gradient(-45deg, var(--bg-color-one), var(--bg-color-two)) ;
+}
+.fb-btn{
+    background-color: rgb(18, 10, 141);
+}
+
+.twitter-btn{
+    background-color: rgb(14, 149, 211);
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-field {
+    width: 80%;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+form .input-field:first-child {
+    margin-bottom: 1.5rem;
+}
+
+.input-field .underline::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.input-field .underline::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(45deg, var(--bg-color-one), var(--bg-color-two));
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+    transform-origin: left;
+}
+
+.input-field input:focus ~ .underline::after {
+    transform: scaleX(1);
+}
+
+.input-field input {
+    outline: none;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+
+.input-field input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+form input[type="submit"] {
+    margin-top: 2rem;
+    padding: 0.4rem;
+    width: 80%;
+    background: linear-gradient(45deg , var(--bg-color-one), var(--bg-color-two));
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    transition: 0.5s;
+    letter-spacing: 0.5px;
+    background: linear-gradient(45deg, var(--bg-color-two), var(--bg-color-one) );
+}
+
+.button{
+    width: 80%;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    color: rgb(219, 219, 219);
+    border-radius: 4px;
+    margin-top: 10px;
+}
